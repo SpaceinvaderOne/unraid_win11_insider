@@ -39,9 +39,10 @@ fi
 }
 
 # copy working files to appdata bind mount
-rsync -avh --exclude-from '/win11/exclude-list.txt' /win11/ /config/ 
+rsync -avh --exclude-from '/win11/exclude-list.txt' /win11/ /config/ && chmod 777 -R /config 
 # change dir to appdata and set perm
 cd /config/ && chmod a+x downloadwin11.sh 
+
 # download win11 insiders then move image to isos share
 download 
 chmod 777 -R /config 
