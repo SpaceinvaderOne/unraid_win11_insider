@@ -1,0 +1,5 @@
+unraid.sh
+Dockerfile
+exclude-list.txt
+.git
+.DS_Store
