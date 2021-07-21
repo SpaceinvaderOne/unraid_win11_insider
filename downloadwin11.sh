@@ -1,5 +1,5 @@
 #!/bin/bash
-#Generated on 2021-07-08 19:35:38 GMT
+#Generated on 2021-07-21 16:14:48 GMT
 
 # Proxy configuration
 # If you need to configure a proxy to be able to connect to the internet,
@@ -35,6 +35,9 @@ if ! which aria2c >/dev/null \
     # Linux
     echo "If you use Debian or Ubuntu you can install these using:"
     echo "sudo apt-get install aria2 cabextract wimtools chntpw genisoimage"
+    echo ""
+    echo "If you use Arch Linux you can install these using:"
+    echo "sudo pacman -S aria2 cabextract wimlib chntpw cdrtools"
   elif [ `uname` == "Darwin" ]; then
     # macOS
     echo "macOS requires Homebrew (https://brew.sh) to install the prerequisite software."
