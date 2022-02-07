@@ -52,7 +52,7 @@ destDir="UUPs"
 tempScript="aria2_script.$RANDOM.txt"
 
 echo "Retrieving aria2 script..."
-aria2c --no-conf --log-level=info --log="aria2_download.log" -o"$tempScript" --allow-overwrite=true --auto-file-renaming=false --check-certificate=false "https://uupdump.net/get.php?id=f19ccfd6-d64a-4f0d-8895-c663949fb7e9&pack=en-us&edition=professional&aria2=2"
+aria2c --no-conf --log-level=info --log="aria2_download.log" -o"$tempScript" --allow-overwrite=true --auto-file-renaming=false "https://uupdump.net/get.php?id=f19ccfd6-d64a-4f0d-8895-c663949fb7e9&pack=en-us&edition=professional&aria2=2"
 if [ $? != 0 ]; then
   echo "Failed to retrieve aria2 script"
   exit 1
